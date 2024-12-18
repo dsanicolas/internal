@@ -6,6 +6,7 @@ import view.HomeView;
 import db.DbMockup;
 import model.Player;
 import model.Game;
+import model.Match;
 
 /* This where the program will be started*/
 public class TwoPlayersGame{
@@ -29,6 +30,9 @@ public class TwoPlayersGame{
             Game gm = gmsItr.next();
             gm.dbgMe(); 
         }
+        
+        Match aMtch = new Match(new Player("Nicolas",1),new Player("John",2),new Game("Tic Tac Toe",1), 1);
+        aMtch.dbgMe();
     }
     
 }
